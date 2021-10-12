@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>House Cost Prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="purple darken-4 accent-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Hi I am Nilesh</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text">House Cost Prediction using Machine learning</h1>
+      <div class="row center">
+        <h5 class="header col s12 light black-text">Predict the cost for your House! ...By Nilesh Raut
+        <br>
+        </h5>
+      </div>
+
+<div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <label for="bed">bedrooms</label>
+        <input type="number" id="bedrooms" name="bed" placeholder="firstname">
+        
+        <label for="bed">bathrooms</label>
+          <input type="number" id="bathrooms" name="bath" placeholder="firstname">
+          
+          <label for="bed">sqft_living</label>
+          <input type="number" id="sqft_living" name="sl" placeholder="firstname">
+          
+          <label for="bed">sqft_lot</label>
+          <input type="number" id="sqft_lot" name="sql" placeholder="firstname">
+          
+          <label for="bed">floors</label>
+          <input type="number" id="floors" name="fl" placeholder="firstname">
+          
+          <label for="bed">waterfront</label>
+          <input type="number" id="waterfront" name="w" placeholder="firstname">
+          
+          <label for="bed">view</label>
+          <input type="number" id="view" name="v" placeholder="firstname">
+          
+          <label for="bed">condition</label>
+          <input type="number" id="condition" name="c" placeholder="firstname">
+          
+          <label for="bed">grade</label>
+          <input type="number" id="grade" name="g" placeholder="firstname">
+          
+          <label for="bed">sqft_above</label>
+          <input type="number" id="sqft_above" name="sa" placeholder="firstname">
+          
+          <label for="bed">sqft_base</label>
+          <input type="number" id="sqft_base" name="sb" placeholder="firstname">
+          <label for="bed">yr_built</label>
+          <input type="number" id="yr_built" name="yb" placeholder="firstname">
+          
+          <label for="bed">yr_renovated</label>
+          <input type="number" id="yr_renovated" name="yr" placeholder="firstname">
+
+          <label for="bed">zipcode</label>
+          <input type="number" id="zipcode" name="z" placeholder="firstname">
+
+          <label for="bed">sqft_living15</label>
+          <input type="number" id="sqft_living15" name="sl15" placeholder="firstname">
+          
+          <label for="bed">sqft_lot15</label>
+          <input type="number" id="sqft_lot15" name="sq15" placeholder="firstname">
+          
+          <button type="submit">Predict the Price</button>
+
+          
+
+        
+    </form>
+      </div>
+      <div class="dark-text">
+      <br>
+        <h4>{{pred}}</h4><br>
+      </div>
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer light-blue lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Nilesh Raut</h5>
+          <p class="grey-text text-lighten-4">I am NIlesh Raut an Machine learner , Deep learner and cloud Devops engginer , This is my Small project .</p>
+        </div>
+        
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Home</a></li>
+            <li><a class="white-text" href="#!">Portfolio</a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div> 
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">LinkedIn</a></li>
+            <li><a class="white-text" href="#!">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
