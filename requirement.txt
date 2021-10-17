@@ -164,3 +164,10 @@ webencodings==0.5.1
 Werkzeug==2.0.1
 widgetsnbextension==3.5.1
 wrapt==1.12.1
+flask
+sklearn
+tensorflow
+numpy
+pandas
+pickle
+
