@@ -1,7 +1,3 @@
 flask
-sklearn
-tensorflow
-numpy
-pandas
 pickle
 
