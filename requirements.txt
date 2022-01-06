@@ -1,4 +1,3 @@
-Flask
 pickle
 numpy
-
+Flask==1.1.2
